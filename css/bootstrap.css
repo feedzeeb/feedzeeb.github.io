@@ -13,7 +13,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 0 auto !important;
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 
@@ -304,9 +304,10 @@ hr {
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 768px) {
+
+@media (min-width: 800px) {
   .container {
-    width: 750px;
+    width: 700px;
   }
 }
 @media (min-width: 992px) {
