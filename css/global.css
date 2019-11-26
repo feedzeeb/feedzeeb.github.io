@@ -37,7 +37,7 @@ a[aria-expanded="true"]{
 }
 
 .type-section {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   display: flex;
   background-color: #37474F;
@@ -50,13 +50,13 @@ a[aria-expanded="true"]{
 
 @media only screen and (max-width: 768px) {
   .type-container {
-    height: 600px;
+    height: 740px;
   }
 }
 
 @media only screen and (max-width: 569px) {
   .type-container {
-    height: 800px;
+    height: 950px;
   }
 }
 
