@@ -391,7 +391,7 @@ to   { opacity: 1; }
     background-image: url('../image/mobile-bg.jpg');
     background-position: center;
     overflow: hidden;
-    margin: 0 auto;
+    padding-top: 70px;
     background-size: cover;
   }
 }
@@ -553,6 +553,7 @@ to   { opacity: 1; }
   .pin-1 {
     position: absolute;
     left:2%;
+    display: none;
   }
 }
 
@@ -565,13 +566,13 @@ to   { opacity: 1; }
 .pin-3 img{
   position: relative !important;
   float: right;
-  right: 8%;
+  right: -2%;
   width: 450px;
 }
 
 .pin-4 img {
   top: 200px;
-  right: 35%;
+  right: 28%;
   width: 300px;
   /* -webkit-transition: -webkit-transform .1s ease-in-out;
         transition:         transform .1s ease-in-out; */
@@ -723,14 +724,14 @@ footer img {
 }
 
 footer p {
-  color: white;
+  color: #c8ced6;
   padding-bottom: 20px;
   font-smooth: antialiased;
   font-smoothing: antialiased;
 }
 
 footer a{
-  color: white;
+  color: #c8ced6;
   text-decoration: none;
   list-style-type: none;
 }
