@@ -83,23 +83,26 @@ padding: 0 0 120px 0;
 
 a[aria-expanded="true"]{
   color: white !important;
-  background-color: #6194E5;
+  /* background-color: #6194E5;
   padding:5px 25px;
-  border-radius: 100px;
+  border-radius: 100px; */
   /* padding-right: 30px; */
   text-decoration: none;
   list-style-type: none;
+  height: 25px;
 }
 
 a[aria-expanded="true"]:hover{
-  background-color: #055CE5;
+  /* background-color: #055CE5; */
+  border-bottom: 1px solid #C799D1;
 }
 
 a[aria-expanded="false"]{
-  background-color: #055CE5;
   color: white !important;
+  border-bottom: 1px solid #C799D1;
+  /* background-color: #055CE5;
   padding:5px 25px;
-  border-radius: 100px;
+  border-radius: 100px; */
   /* padding-right: 30px; */
   text-decoration: none;
   list-style-type: none;
@@ -122,6 +125,10 @@ a[aria-expanded="false"]{
   margin-bottom: 20px;
 }
 
+#light {
+  padding-bottom: 18px;
+}
+
 .light-type {
   color: white;
   font-family: proxima-nova, sans-serif;
@@ -135,6 +142,7 @@ a[aria-expanded="false"]{
  -webkit-font-smoothing: antialiased;
  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
   overflow: hidden;
+  line-height: 40px;
 }
 
 .medium-type {
@@ -548,7 +556,7 @@ to   { opacity: 1; }
   }
   .pin-3 {
     position: absolute;
-    right: -20%;
+    right: -7%;
   }
   .pin-1 {
     position: absolute;
