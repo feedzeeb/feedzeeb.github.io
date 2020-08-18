@@ -40,3 +40,14 @@
   //     });
   //
   // });
+
+  $(function(){
+          $('.showSingle').click(function(){
+                $('.showSingle').removeClass("active");
+                $(this).addClass("active");
+
+                $('.targetDiv').hide();
+                // $('.showSingle').addClass("type-active");
+                $('#div'+$(this).attr('target')).show();
+          });
+  });
