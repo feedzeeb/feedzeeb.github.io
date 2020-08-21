@@ -8,7 +8,7 @@
 
 body {
   position: inherit;
-  font-family: "proxima-nova" !important;
+  font-family: "ProximaNova-Regular" !important;
   /* font-style:italic !important; */
 }
 
@@ -201,8 +201,9 @@ a[aria-expanded="false"]{
 }
 
 #website-section {
-  /* margin: auto; */
+  margin: 0 auto;
   /* margin-bottom: 150px; */
+  max-width: 1600px;
   padding:50px 0;
   background-color: #0567E9;
   color: white;
@@ -326,7 +327,7 @@ nav {
 .video-container {
   margin: 0 auto;
   position: relative;
-  width: 100%;
+  max-width: 1600px;
 
   /* max-width: 1440px; */
   /* min-width: 1400px;
@@ -402,7 +403,7 @@ nav {
 }
 
 #photo-slider {
-  max-width: 1440px;
+  max-width: 1600px;
   margin-top: 50px;
   margin: 0 auto;
 }
@@ -426,12 +427,6 @@ nav {
 }
 
 
-.illustration-section {
-  padding-top: 100px;
-  padding-bottom: 1px;
-  background-color: #F5F8FC;
-}
-
 .illustration-section h1{
   padding-bottom: 50px;
 }
@@ -451,26 +446,25 @@ nav {
 
 #illustration-bg {
   margin: 0 auto;
-  width: 1600px;
-  /* margin: 0 auto;
-  width: 1600px;
-  height: 531px; */
-  /* display: flex; */
-  /* background-color: #F5F8FC; */
-  /* overflow: hidden;
-  justify-c1600px;ontent: center; */
-  /* background-position: right;
+  height: 531px;
+  background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../image/illustration-bg.png); */
-  position: relative;
-  overflow: hidden;
+  max-width: 1600px;
+  background-image: url(../image/illustration-bg.png);
+}
+
+@media only screen and (max-width: 768px) {
+  #illustration-bg {
+    background-position: right;
+    background-image: url(../image/illustration-bg-mobile.jpg);
+  }
 }
 
 #give {
   left: -100px;
-    position: absolute;
+    position: relative;
     z-index: 1;
-    bottom: 1px;
+    bottom: 5px;
 }
 
 .illustration-margin img{
@@ -755,7 +749,7 @@ footer hr{
 .type-menu {
   display: flex;
   flex-direction: column;
-  padding-right:30%;
+  padding-right:34%;
   font-weight: bold;
   font-size: calc(25px + (30 - 25) * ((100vw - 300px) / (1600 - 300)));
 }
@@ -781,6 +775,11 @@ footer hr{
       flex-direction: column;
       margin: 0 auto;
   }
+
+  .active::after{
+    display: none;
+  }
+
 }
 
 
@@ -788,22 +787,45 @@ footer hr{
 .type-menu a{
   cursor: pointer;
   padding-bottom: 10px;
+  color: black;
+  -webkit-text-fill-color: #82E3E0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .type-menu a:hover{
-  /* color: #009EA1 !important; */
   color: black !important;
-  -webkit-text-fill-color: #82E3E0;
+  -webkit-text-fill-color: black !important;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 
 .active {
   color: black !important;
-  -webkit-text-fill-color: #82E3E0;
+  -webkit-text-fill-color: black !important;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
+
+.active::after{
+  position: absolute;
+  padding-left: 10px;
+  padding-top: 15px;
+  content: url(../image/arrow.png);
+  animation: wiggle 0.8s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(5px, 0);
+  }
+}
+
 
 
 
@@ -822,7 +844,7 @@ footer hr{
 }
 
 #div1 h1{
-  font-weight: bold;
+  font-family: ProximaNova-Bold;
   font-size: calc(40px + (50 - 40) * ((100vw - 300px) / (1600 - 300)));
 /* font-size: 5vmax; */
 }
@@ -836,9 +858,11 @@ footer hr{
   font-size: 30px;
   padding-bottom: 5px;
   font-weight: 500px;
+  font-family: ProximaNova-Medium;
 }
 
 #div2 p {
+  font-family: ProximaNova-Regular;
   color: #DCDCDC;
 }
 
@@ -848,8 +872,9 @@ footer hr{
 }
 
 #div3 h3{
+  font-family: ProximaNova-Light;
   color: #DCDCDC;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 #div4{
@@ -858,7 +883,13 @@ footer hr{
 }
 
 #div4 p{
+  font-family: ProximaNova-Regular;
   color: #DCDCDC;
+}
+
+#div4 h3{
+  font-family: ProximaNova-Light;
+  font-size: 32px;
 }
 
 .line {
