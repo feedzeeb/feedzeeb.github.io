@@ -750,7 +750,7 @@ footer hr{
   display: flex;
   flex-direction: column;
   padding-right:34%;
-  font-weight: bold;
+  font-family: ProximaNova-Bold;
   font-size: calc(25px + (30 - 25) * ((100vw - 300px) / (1600 - 300)));
 }
 
@@ -811,7 +811,8 @@ footer hr{
   position: absolute;
   padding-left: 10px;
   padding-top: 15px;
-  content: url(../image/arrow.png);
+  width: 10px;
+  content: url(../image/arrow.svg);
   animation: wiggle 0.8s infinite;
   animation-timing-function: ease-in-out;
 }
