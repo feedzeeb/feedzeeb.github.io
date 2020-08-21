@@ -34,21 +34,21 @@
 
 @font-face {
   font-family: 'ProximaNova-Medium';
-  src: url('webFonts/ProximaNova-Medium/font.woff2') format('woff2'), url('webFonts/ProximaNova-Medium/font.woff') format('woff');
+  src: url('../webFonts/ProximaNova-Medium/font.woff2') format('woff2'), url('webFonts/ProximaNova-Medium/font.woff') format('woff');
 }
 @font-face {
   font-family: 'ProximaNova-Bold';
-  src: url('webFonts/ProximaNova-Bold/font.woff2') format('woff2'), url('webFonts/ProximaNova-Bold/font.woff') format('woff');
+  src: url('../webFonts/ProximaNova-Bold/font.woff2') format('woff2'), url('webFonts/ProximaNova-Bold/font.woff') format('woff');
 }
 @font-face {
   font-family: 'ProximaNova-Regular';
-  src: url('webFonts/ProximaNova-Regular/font.woff2') format('woff2'), url('webFonts/ProximaNova-Regular/font.woff') format('woff');
+  src: url('../webFonts/ProximaNova-Regular/font.woff2') format('woff2'), url('webFonts/ProximaNova-Regular/font.woff') format('woff');
 }
 @font-face {
   font-family: 'ProximaNova-Semibold';
-  src: url('webFonts/ProximaNova-Semibold/font.woff2') format('woff2'), url('webFonts/ProximaNova-Semibold/font.woff') format('woff');
+  src: url('../webFonts/ProximaNova-Semibold/font.woff2') format('woff2'), url('webFonts/ProximaNova-Semibold/font.woff') format('woff');
 }
 @font-face {
   font-family: 'ProximaNova-Light';
-  src: url('webFonts/ProximaNova-Light/font.woff2') format('woff2'), url('webFonts/ProximaNova-Light/font.woff') format('woff');
+  src: url('../webFonts/ProximaNova-Light/font.woff2') format('woff2'), url('webFonts/ProximaNova-Light/font.woff') format('woff');
 }
