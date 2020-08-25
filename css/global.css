@@ -782,8 +782,6 @@ footer hr{
 
 }
 
-
-
 .type-menu a{
   cursor: pointer;
   padding-bottom: 10px;
@@ -902,4 +900,43 @@ footer hr{
 .type-footer {
   display: flex;
   justify-content:space-between;
+}
+
+#brandstory {
+    margin: 0 auto;
+    padding: 160px 0 0 0;
+}
+
+#brandstory img {
+  padding: 40px 0 70px 0;
+  width: 100%;
+  height: 500px;
+}
+
+#brandstory h1{
+  font-size: 35px;
+  font-family: ProximaNova-bold;
+  text-align: center;
+}
+
+.light {
+  font-family: ProximaNova-light;
+}
+
+
+#change {
+  display: flex;
+}
+#change h1{
+  padding-top: 100px;
+  text-align: center;
+}
+
+#change img {
+  width: 100%;
+}
+
+.change-float {
+  position: absolute;
+  width: 300px;
 }
