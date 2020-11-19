@@ -48,7 +48,7 @@ span.bold{
   background-color: #F5F8FC;
   border-bottom: solid 1px #979797;
   max-width: 1600px;
-  margin: 100px auto 0 auto;
+  margin: 70px auto 0 auto;
 
 }
 
@@ -567,6 +567,9 @@ nav {
     opacity:0;
 }
 
+.hideme2 {
+    opacity:0;
+}
 
 header {
   position: relative !important;
@@ -736,7 +739,8 @@ footer hr{
 
 #type-interactive {
     background-color: #F5F8FC;
-    height: 80vh;
+    min-height: 600px;
+
     display: flex;
     max-width: 1600px;
     margin: 0 auto;
@@ -837,6 +841,7 @@ footer hr{
   width: 100%;
   padding: 5%;
   display: flex;
+  min-height: 80vh;
   justify-content: center;
   flex-direction: column;
 }
@@ -847,11 +852,12 @@ footer hr{
   /* display: inline-block; */
 }
 
-#div1 h1{
+#type-interactive h1 {
   font-family: ProximaNova-Bold;
-  font-size: calc(40px + (50 - 40) * ((100vw - 300px) / (1600 - 300)));
-/* font-size: 5vmax; */
-}
+  font-size: 80px;
+  line-height: 68px;
+  }
+
 
 #div2 {
   margin: auto 0;
@@ -859,7 +865,7 @@ footer hr{
 }
 
 #div2 h2 {
-  font-size: 30px;
+  font-size: 40px;
   padding-bottom: 5px;
   font-weight: 500px;
   font-family: ProximaNova-Medium;
@@ -924,17 +930,24 @@ footer hr{
   text-align: center;
 }
 
+#brandstory h2{
+  font-size: 38px;
+  /* padding-bottom: 5px; */
+}
+
+#brandstory h3{
+  font-size: 22px;
+  margin-bottom: 0;
+  font-family: ProximaNova-bold;
+}
+
 .light {
   font-family: ProximaNova-light;
 }
 
 
-#change {
-  margin-bottom: 80px;
-}
-
 #change h1{
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 50px;
 }
 
@@ -963,7 +976,7 @@ footer hr{
 .change-imagetwo {
   width: 28%;
   position: absolute;
-  top: 40px;
+  top: 0px;
   right: 20px;
 }
 
@@ -973,6 +986,7 @@ footer hr{
 }
 
 .line-1 {
+  margin-top:60px;
   width: 100%;
   height:2px;
   border: none;
@@ -999,12 +1013,12 @@ footer hr{
 }
 
 #voiceandtone{
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 #voiceandtone h2{
-    font-family: ProximaNova-Regular;
-    font-size: 24px;
+    font-family: ProximaNova-Bold;
+    font-size: 70px;
 }
 
 .voiceandtone-card p{
@@ -1013,11 +1027,12 @@ footer hr{
 }
 
 #voiceandtone span {
-  color: #BBBBBB;
+  color: #d6d6d6;
+  width: 100%;
 }
 
 .voiceandtone-card {
-  padding-top: 40px;
+  padding:100px 0 100px 0;
 }
 
 .voiceandtone-card:last-child{

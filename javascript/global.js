@@ -1,46 +1,4 @@
 
-// $(window).on("scroll", function() {
-//         if($(window).scrollTop()) {
-//               $('nav').addClass('nav-transparent');
-//               $('.logo').addClass('logo-black');
-//               $('.nav-design').addClass('nav-design-black');
-//         }
-//
-//         else {
-//               $('nav').removeClass('nav-transparent');
-//               $('.logo').removeClass('logo-black');
-//               $('.nav-design').removeClass('nav-design-black');
-//         }
-//   })
-
-  // $(function(){  // $(document).ready shorthand
-  //   $('.monster').fadeIn('slow');
-  // });
-  //
-  // $(document).ready(function() {
-  //
-  //     /* Every time the window is scrolled ... */
-  //     $(window).scroll( function(){
-  //
-  //         /* Check the location of each desired element */
-  //         $('.hideme').each( function(i){
-  //
-  //             var bottom_of_object = $(this).position().top + $(this).outerHeight();
-  //             var bottom_of_window = $(window).scrollTop() + $(window).height();
-  //
-  //             /* If the object is completely visible in the window, fade it it */
-  //             if( bottom_of_window > bottom_of_object ){
-  //
-  //                 $(this).animate({'opacity':'1'},1500);
-  //
-  //             }
-  //
-  //         });
-  //
-  //     });
-  //
-  // });
-
   $(function(){
           $('.showSingle').click(function(){
                 $('.showSingle').removeClass("active");
@@ -50,4 +8,49 @@
                 // $('.showSingle').addClass("type-active");
                 $('#div'+$(this).attr('target')).show();
           });
+  });
+
+
+// $(function(){  // $(document).ready shorthand
+//     $('.change').fadeIn('slow');
+// });
+
+  $(document).ready(function() {
+    $(window).scroll( function(){
+
+        $('.hideme').each( function(i){
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({
+                  'opacity':'1',
+                  top:"60px"
+              },1500);
+            }
+
+        });
+      });
+  });
+
+
+  $(document).ready(function() {
+    $(window).scroll( function(){
+
+        $('.hideme2').each( function(i){
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({
+                  'opacity':'1',
+              },3500);
+            }
+
+        });
+      });
   });
